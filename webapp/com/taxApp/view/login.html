@@ -1,0 +1,18 @@
+<head>
+
+    <Script src="../resources/angular.min.js"></Script>
+    <script src="../controller/loginController.js"></script>
+</head>
+<body ng-app="loginController">
+<div ng-controller="loginFormController">
+    <h1>The Homey Page {{greeting}}</h1>
+    <p>This page demonstrates <span class="text-danger">nested</span> views.</p>
+
+    <form>
+        <label>Username:</label><input type="text" ng-model="user.email" /></br></br>
+        <label></label>Password:</label><input type="password" ng-model="user.password"></br>
+        <button  type="submit" ng-click="loginUser()">login</button>
+        <a href="register.html">Register</a>
+    </form>
+</div>
+</body>

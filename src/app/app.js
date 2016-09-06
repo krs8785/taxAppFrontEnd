@@ -4,9 +4,14 @@
 
 var myApp = angular.module('myApp', ['ui.router','formData']);
 
+
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/frontPage');
+    $urlRouterProvider.when('/frontPage', '/frontPage/home');
+
+    $urlRouterProvider.when('/mainApp', '/mainApp/dashboard');
+    $stateProvider
     $stateProvider
         .state('frontPage', {
             url: '/frontPage',
